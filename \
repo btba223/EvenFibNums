@@ -1,0 +1,16 @@
+var fibArray = [];
+var fibNum = 0;
+var counter = 0;
+do{
+	
+	if (i < 2){
+		print(i);
+		fibArray[fibArray.length] = i;
+	}
+	else{
+		fibNum = fibArray[fibArray.length - 2] + fibArray[fibArray.length - 1];
+		fibArray[fibArray.length] = fibNum;
+		print(fibNum);
+	}
+	counter++
+} while(fibNum < 4000000)
